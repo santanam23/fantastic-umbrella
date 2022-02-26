@@ -9,7 +9,26 @@ class Product extends Model {}
 // set up fields and rules for Product model
 Product.init(
   {
-    // define columns
+    // Define id column
+    id: {
+
+    },
+    // Define product name column
+    product_name: {
+
+    },
+    // Define price column
+    price: {
+
+    },
+    // Define stock column
+    stock: {
+
+    },
+    // Define category id column
+    category_id: {
+      
+    }
   },
   {
     sequelize,
