@@ -6,7 +6,13 @@ class Tag extends Model {}
 
 Tag.init(
   {
-    // define columns
+    // define id column
+    id: {
+
+    },
+    tag_name: {
+      
+    }
   },
   {
     sequelize,
