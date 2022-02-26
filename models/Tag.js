@@ -13,8 +13,10 @@ Tag.init(
       primaryKey: true,
       autoIncrement: true
       },
+    //Define tag_name column
     tag_name: {
-      
+      type: DataTypes.INTEGER,
+      allowNull: false
     }
   },
   {

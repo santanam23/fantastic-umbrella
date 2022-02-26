@@ -19,20 +19,32 @@ Product.init(
     // Define product name column
     product_name: {
       type: DataTypes.STRING,
+      allowNull: false
     },
     // Define price column
     price: {
       type: DataTypes.DECIMAL,
+      allowNull: false,
+      validate: {
+        isDecimal: true
+      }
     },
     // Define stock column
     stock: {
       type: DataTypes.INTEGER,
-
+      allowNull: false,
+      validate: {
+        isNumeric: true
+      }
     },
     // Define category id column
     category_id: {
-      type: DataTypes.INTEGER
-      
+      type: DataTypes.INTEGER,
+      allowNull: false,
+      references: {
+        model: 'category',
+        key: 'id'
+      }
     }
   },
   {
