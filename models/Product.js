@@ -11,22 +11,27 @@ Product.init(
   {
     // Define id column
     id: {
-
+      type: DataTypes.INTEGER,
+      allowNull: false,
+      primaryKey: true,
+      autoIncrement: true
     },
     // Define product name column
     product_name: {
-
+      type: DataTypes.STRING,
     },
     // Define price column
     price: {
-
+      type: DataTypes.DECIMAL,
     },
     // Define stock column
     stock: {
+      type: DataTypes.INTEGER,
 
     },
     // Define category id column
     category_id: {
+      type: DataTypes.INTEGER
       
     }
   },

@@ -8,8 +8,11 @@ ProductTag.init(
   {
     // Define id column
     id: {
-
-    },
+      type: DataTypes.INTEGER,
+      allowNull: false,
+      primaryKey: true,
+      autoIncrement: true
+      },
     // Define product_id column
     product_id: {
 
