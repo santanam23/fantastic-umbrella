@@ -10,7 +10,7 @@ router.get('/', (req, res) => {
     include: [ Category, Tag],
   })
   // be sure to include its associated Category and Tag data
-  .then((dbProductData) => res.json(dbProductData))
+  .then((dbproductData) => res.json(dbproductData))
   .catch((err) => {
     console.log(err);
     res.status(500).json(err);
@@ -27,12 +27,12 @@ router.get('/:id', (req, res) => {
     // be sure to include its associated Category and Tag data
     include: [Category, Tag]
     })
-    .then(dbProductData => {
-      if (!dbProductData) {
+    .then(dbproductData => {
+      if (!dbproductData) {
         res.status(404).json({ message: 'No Products found'});
         return;
       }
-      res.json(dbProductData);
+      res.json(dbproductData);
     })
     .catch(err => {
       console.log(err);
@@ -121,12 +121,12 @@ router.delete('/:id', (req, res) => {
       id: req.params.id
     }
   })
-  .then(dbProductData => {
-    if (!dbProductData) {
+  .then(dbproductData => {
+    if (!dbproductData) {
       res.status(404).json({ message: 'No product found with this id' });
       return;
     }
-    res.json(dbProductData);
+    res.json(dbproductData);
   })
   .catch(err => {
     console.log(err);
