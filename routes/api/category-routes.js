@@ -62,8 +62,6 @@ router.post('/', (req, res) => {
 
 router.put('/:id', (req, res) => {
   // update a category by its `id` value
-
-  // if req.body has exact key/value pairs to match the model, you can just use `req.body` instead
   Category.update(req.body, {
     where: {
       id: req.params.id
