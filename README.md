@@ -19,7 +19,8 @@
   npm i express sequelize
 
   ## Usage 
-  This app allows users to create, edit and delete categories.
+  This app allows users to create, edit and delete categories. 
+  View walk through video via [Screencastify](https://drive.google.com/file/d/1B5y6FwJYyUQa6ADscBCChTlKFVoq6S1g/view)
 
   ## License & Copyright
   This project is license under MIT
